@@ -1,0 +1,14 @@
+LIBRARY GUIDE (for SURF-COM receiver)
+
+To your Raspberry Pi Zero receiver, install the following:
+- PyAudio                       (via pip)
+	- portaudio19-dev       (via sudo apt-get)
+- numpy 			(via pip)
+	-setuptools 		(via pip)
+	- libopenblas-dev 	(via sudo apt-get)
+ 
+
+If directly driving actuators from Pi:
+- gpiozero 			(via pip)
+- RPi.GPIO 			(via pip)
+- pigpio 			(via pip)

@@ -8,7 +8,7 @@ This code is designed to run on the Raspberry Pi Zero, though may be able to run
 
 
 ### Libraries
-First, install all relavent libraries for your application (see Library Guide).
+First, install all relavent libraries for your application (see Startup Guide, then Library Guide).
 
 
 ### Adapting the Code

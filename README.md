@@ -30,6 +30,8 @@ Upload this code to your Raspberry Pi Zero. If you are running in headless mode 
 
 Plug in a USB microphone to the Pi and power on your system. Running this script will cause the Pi to wait until it hears a target tone, then perform the specified action associated with that tone. There is a delay after each action in which the same action cannot be performed again.
 
+The system may take up to five minutes to boot up upon powering on, so an indicator LED is recommended.
+
 
 ## Transmitter
 Instead of using the transmitter code described in the conference paper (which can be found in the Dragon Example), we recommend plugging a phone or computer into a waterproof speaker with an amplifier and running a waveform generator application to generate the desired target tone.

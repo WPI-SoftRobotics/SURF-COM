@@ -43,4 +43,4 @@ Instead of using the transmitter code described in the conference paper (which c
 A slightly modified version of the general code which drives a BLDC motor and a Servo, and has an LED indicator light.
 
 ## Current Transmitter
-Can be run on a Raspberry Pi 3 or comparable, takes a simple USB video game controller as input, and outputs a constant tone through any speaker hooked up to the audio jack. 
+Can be run on a Raspberry Pi 3 or comparable, takes a simple USB video game controller as input, and outputs a constant tone through any speaker hooked up to the audio jack. Additional instructions for replication are included in this folder.

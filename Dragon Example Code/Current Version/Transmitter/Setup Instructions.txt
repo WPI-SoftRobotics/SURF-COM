@@ -1,0 +1,39 @@
+SETUP INSTRUCTIONS (Dragon Transmitter on a Raspberry Pi 3):
+* text in << >> is meant to be replaced by you
+
+
+On Raspberry Pi 3 in terminal:
+
+sudo apt install
+sudo apt-get update
+sudo apt install python3-pyudev
+sudo apt upgrade python3-pyudev
+aplay --list-devices
+
+sudo nano /boot/firmware/config.txt
+
+(Disable the RaspberyPi onboard sound card, by commenting out the line: dtparam=audio=on in /boot/config.txt)
+	Ctrl S Ctrl X
+
+sudo nano /usr/share/alsa/alsa.conf
+
+(Make the USB Audio card the default device in alsa by updating defaults.ctl.card and defaults.pcm.card to 1 in /usr/share/alsa/alsa.conf)
+	defaults.ctl.card 1
+	defaults.pcm.card 1
+	Ctrl S Ctrl X
+
+aplay --list-devices
+
+sudo apt install python3-pygame
+sudo apt install python3-evdev
+
+sudo nano /etc/rc.local
+
+(Before the exit 0 line, add a command to run your Python script. Optionally specify where to create a log file for debugging. 
+Make sure to use the full path to the Python interpreter and your script.)
+	sudo python3 /home/<<location>>/main_script.py > /home/<<location>>/speaker.log 2>&1 &
+	Press Ctrl + X, then Y, and Enter to save and exit the editor.
+
+To run code without auto start:
+cd <<location_of_code>>
+python3 main_script.py

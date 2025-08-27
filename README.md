@@ -1,6 +1,8 @@
 # SURF-COM
 SURF-COM (Simple Underwater Robotic Framework for Communication), an open-source acoustic controller for underwater robots.
 
+## Research Paper
+https://doi.org/10.1109/RoboSoft63089.2025.11020936
 
 # GENERAL CASE CODE
 ## Receiver
